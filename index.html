@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
   <body>
     <header>
@@ -37,7 +41,7 @@
         <button><a href="#about">About Me</a></button>
       </div>
       <div data-aos="fade-up" class="hero-image">
-        <img src="img/Farid.jpg" alt="Personal Photo" />
+        <img src="img/personalimg.jpg" alt="Personal Photo" />
       </div>
     </section>
 
@@ -45,7 +49,7 @@
       <h1>Tentang Saya</h1>
       <div data-aos="fade-in" class="about-content">
         <div class="about-image">
-          <img src="img/Farid.jpg" />
+          <img src="img/personalimg.jpg" />
         </div>
         <div class="about-text">
           <p>
@@ -97,8 +101,15 @@
               >Lihat</a
             >
           </div>
-          <div class="card">
-          <img src="img/Cuplikan layar 2025-05-17 163140.png" alt="Project 3" />
+        </div>
+        <div class="card">
+          <img src="img/Cuplikan layar 2025-07-24 102231.png" alt="Project 4" />
+          <div class="card-content">
+            <span class="card-title">Website Kelas 2.0</span>
+            <a href="https://pepelegsone.web.app" target="_blank" class="btn"
+              >Lihat</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -129,12 +140,14 @@
               class="skill-icon"
               name="color-palette-outline"
             ></ion-icon>
-            <h3>UI/UX Design</h3>
+            <h3>UI/UX Enthusiast</h3>
             <p>Desain antarmuka yang user-friendly dan estetis.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- <div id="github-calendar"></div> -->
 
     <section data-aos="fade-in" id="footer" class="footer-section">
       <div class="footer-about">
@@ -191,6 +204,14 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+      new GitHubCalendar("#github-calendar", "faridadilahz", {
+        responsive: true, // membuat tampilan responsif
+        tooltips: true, // kalau kamu mau tooltip tampil waktu hover
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>
